@@ -1,0 +1,50 @@
+/* Fondo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo del lienzo de Tetris */
+canvas {
+    border: 4px solid #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #222;
+}
+
+/* Puntuación */
+#score {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para las piezas (gemas o esmeraldas) */
+canvas {
+    position: relative;
+    display: block;
+    margin-top: 20px;
+}
+
+canvas > rect {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Efectos especiales para las figuras de las piezas */
+canvas rect {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 10%, rgba(0, 0, 0, 0.3) 90%);
+}
